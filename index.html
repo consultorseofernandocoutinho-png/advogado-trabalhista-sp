@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Trabalhista em São Paulo | Defenda Seus Direitos</title>
+    <meta name="description" content="Advocacia trabalhista especializada em São Paulo. Proteja seus direitos trabalhistas com advogados experientes. Consulta Amigável Online do seu caso.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-left: 5px solid #2a5298;
+            padding-left: 15px;
+        }
+
+        .section h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card h4 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h3 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .related-links {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #2a5298;
+        }
+
+        .related-links h4 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .related-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-links li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .related-links li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+        }
+
+        .related-links a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .related-links a:hover {
+            color: #2a5298;
+            text-decoration: underline;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .inline-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .inline-link:hover {
+            border-bottom: 2px solid #2a5298;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .services-grid, .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏛️ Advocacia Trabalhista em São Paulo</h1>
+        <p>Defenda Seus Direitos Trabalhistas com Especialistas</p>
+        <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">💬 Consulta Amigável Online pelo WhatsApp</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Advocacia Trabalhista Especializada em São Paulo</h2>
+            <p>Se você está enfrentando problemas no ambiente de trabalho ou foi injustiçado em seus direitos trabalhistas, você precisa de uma advocacia trabalhista experiente e comprometida com seus interesses. Nossa equipe de advogados trabalhistas em São Paulo está preparada para defender seus direitos e garantir que você receba tudo aquilo que a legislação trabalhista brasileira assegura.</p>
+            
+            <p>Com anos de experiência atuando em processos trabalhistas na capital paulista e região metropolitana, oferecemos atendimento personalizado, estratégias jurídicas eficazes e acompanhamento completo do seu caso desde a primeira consulta até a execução da sentença. Entendemos que cada situação é única e merece atenção especial, por isso desenvolvemos soluções customizadas para cada cliente.</p>
+
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚖️</div>
+                    <h4>Experiência Comprovada</h4>
+                    <p>Anos de atuação em direito trabalhista</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Atendimento Personalizado</h4>
+                    <p>Cada caso recebe atenção individual</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <h4>Consulta Amigável Online</h4>
+                    <p>Análise inicial conveniente</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <h4>Resultados Efetivos</h4>
+                    <p>Foco em conquistas reais</p>
+                </div>
+            </div>
+
+            <div class="related-links">
+                <h4>🌎 Advocacia Trabalhista em Outras Cidades da Região</h4>
+                <ul>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-guarulhos/" target="_blank">Advocacia Trabalhista em Guarulhos SP</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-santo-andre/" target="_blank">Advocacia Trabalhista em Santo André</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-osasco/" target="_blank">Advocacia Trabalhista em Osasco</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h3>Não Perca Mais Tempo!</h3>
+            <p>Seus direitos trabalhistas têm prazo para serem reivindicados. Quanto antes você agir, maiores as chances de sucesso.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">🚀 Fale com um Advogado Agora</a>
+        </div>
+
+        <div class="section">
+            <h2>Serviços de Advocacia Trabalhista em São Paulo</h2>
+            <p>Nossa advocacia trabalhista oferece uma ampla gama de serviços para proteger seus direitos e garantir que você receba tudo aquilo que merece. Atuamos em todas as esferas do direito do trabalho, desde consultas preventivas até complexas ações judiciais. Assim como nossa <a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-campinas/" class="inline-link" target="_blank">advocacia trabalhista em Campinas</a>, oferecemos suporte completo em diversas áreas.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>💼 Demissão Sem Justa Causa</h4>
+                    <p>Auxílio completo em casos de demissão irregular, garantindo o recebimento de todas as verbas rescisórias, incluindo aviso prévio, férias proporcionais, 13º salário, saque do FGTS e multa de 40%. Analisamos se todos os seus direitos foram respeitados no momento da rescisão.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>⚠️ Demissão por Justa Causa</h4>
+                    <p>Contestação de demissões por justa causa aplicadas de forma inadequada ou injusta. Muitas vezes, o empregador alega motivos que não se sustentam juridicamente. Nossa equipe analisa detalhadamente cada caso para reverter demissões indevidas e garantir seus direitos.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>💰 Horas Extras Não Pagas</h4>
+                    <p>Cobrança de horas extras não remuneradas, incluindo adicional noturno, trabalho em feriados e finais de semana. Se você trabalhou além da jornada estabelecida e não recebeu a devida compensação, podemos recuperar esses valores com os acréscimos legais de 50% ou 100%.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>🏖️ Férias e 13º Salário</h4>
+                    <p>Ação para cobrança de férias não concedidas, férias vencidas, férias proporcionais e 13º salário não pago. Todo trabalhador tem direito a esses benefícios, e sua negação ou pagamento irregular constitui grave violação dos direitos trabalhistas.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>🤕 Acidente de Trabalho</h4>
+                    <p>Representação em casos de acidentes de trabalho e doenças ocupacionais. Buscamos indenização por danos materiais, morais e estéticos, além de garantir a estabilidade provisória e todos os benefícios previdenciários cabíveis ao trabalhador acidentado.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>😰 Assédio Moral e Sexual</h4>
+                    <p>Defesa rigorosa em situações de assédio moral, assédio sexual, discriminação e ambiente de trabalho hostil. Essas práticas são inaceitáveis e geram direito a indenização por danos morais, além de outras medidas legais cabíveis.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>📋 Desvio de Função</h4>
+                    <p>Ação judicial para casos onde o trabalhador executa funções diferentes daquelas para as quais foi contratado, sem a devida remuneração. O desvio de função gera direito a receber as diferenças salariais e reflexos em FGTS, férias e 13º salário.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>🏭 Insalubridade e Periculosidade</h4>
+                    <p>Cobrança de adicional de insalubridade e periculosidade para trabalhadores expostos a agentes nocivos ou condições perigosas. Realizamos perícias técnicas para comprovar as condições inadequadas e garantir o pagamento dos adicionais devidos.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>📄 Reconhecimento de Vínculo Empregatício</h4>
+                    <p>Ação para reconhecimento de vínculo empregatício em casos de trabalho informal, contratos fraudulentos de prestação de serviços, ou situações de pejotização. Garantimos todos os direitos trabalhistas desde o início da relação de trabalho.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>💳 Equiparação Salarial</h4>
+                    <p>Cobrança de diferenças salariais quando há desigualdade de remuneração entre trabalhadores que exercem a mesma função, com mesma produtividade e perfeição técnica, para o mesmo empregador e na mesma localidade.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>🚫 Rescisão Indireta</h4>
+                    <p>Quando o empregador comete faltas graves que tornam insustentável a continuidade do contrato de trabalho, o empregado pode pedir a rescisão indireta, recebendo as mesmas verbas de uma demissão sem justa causa. Analisamos se sua situação se enquadra nessa modalidade.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>👶 Estabilidade e Reintegração</h4>
+                    <p>Defesa de trabalhadores com estabilidade provisória, como gestantes, acidentados, membros da CIPA, dirigentes sindicais e outros casos previstos em lei. Buscamos a reintegração ao emprego ou indenização substitutiva.</p>
+                </div>
+            </div>
+
+            <div class="related-links">
+                <h4>📍 Atendimento em Cidades do Interior de São Paulo</h4>
+                <ul>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-sorocaba/" target="_blank">Advocacia Trabalhista em Sorocaba</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-mogi-das-cruzes/" target="_blank">Advocacia Trabalhista em Mogi das Cruzes</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-maua/" target="_blank">Advocacia Trabalhista em Mauá SP</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h3>Seus Direitos Estão Sendo Violados?</h3>
+            <p>Não aceite injustiças! Converse com nossos especialistas e descubra como podemos ajudar.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">📞 Entre em Contato Pelo WhatsApp</a>
+        </div>
+
+        <div class="section">
+            <h2>Por Que Escolher Nossa Advocacia Trabalhista?</h2>
+            <p>A escolha do advogado trabalhista certo pode fazer toda a diferença no resultado do seu processo. Nossa equipe se destaca pela dedicação, conhecimento técnico aprofundado e compromisso genuíno com a justiça trabalhista. Atendemos não apenas em São Paulo capital, mas também oferecemos suporte para trabalhadores de <a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-diadema/" class="inline-link" target="_blank">Diadema</a> e região.</p>
+
+            <h3>🎓 Conhecimento Especializado</h3>
+            <p>Nossos advogados são especializados exclusivamente em direito do trabalho, acompanhando constantemente as mudanças na legislação trabalhista, jurisprudências dos tribunais e as nuances da Reforma Trabalhista. Esse conhecimento especializado permite desenvolver estratégias mais eficazes para cada caso.</p>
+
+            <h3>🤝 Atendimento Humanizado</h3>
+            <p>Entendemos que problemas trabalhistas causam não apenas prejuízos financeiros, mas também grande estresse emocional. Por isso, oferecemos atendimento humanizado, ouvindo atentamente sua história e explicando de forma clara todos os procedimentos legais, mantendo você sempre informado sobre o andamento do seu processo.</p>
+
+            <h3>💪 Defesa Agressiva dos Seus Direitos</h3>
+            <p>Atuamos de forma incisiva na defesa dos seus interesses, utilizando todos os recursos legais disponíveis. Não medimos esforços para garantir que você receba exatamente aquilo que a lei assegura, enfrentando empresas de qualquer porte com a mesma determinação.</p>
+
+            <h3>📊 Transparência Total</h3>
+            <p>Mantemos nossos clientes sempre informados sobre as chances reais de sucesso, os prazos processuais e todos os desdobramentos do caso. Acreditamos que a transparência é fundamental para uma relação de confiança entre advogado e cliente.</p>
+
+            <div class="related-links">
+                <h4>🌐 Nossa Rede Nacional de Advocacia Trabalhista</h4>
+                <ul>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-belo-horizonte/" target="_blank">Advogado Trabalhista em Belo Horizonte</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-juiz-de-fora/" target="_blank">Advogado Trabalhista em Juiz de Fora MG</a></li>
+                    <li><a href="https://advogadotrabalhistabr.app.br/advogado-trabalhista-em-contagem/" target="_blank">Advogado Trabalhista em Contagem MG</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Como Funciona o Processo Trabalhista?</h2>
+            <p>Muitas pessoas deixam de buscar seus direitos por desconhecerem como funciona um processo trabalhista. Nossa equipe facilita todo o procedimento para você, com o mesmo padrão de excelência que oferecemos em nossa <a href="https://advogadotrabalhistabr.app.br/advocacia-trabalhista-em-sao-jose-dos-campos/" class="inline-link" target="_blank">advocacia trabalhista em São José dos Campos</a>.</p>
+
+            <h3>1️⃣ Primeira Consulta Amigável Online</h3>
+            <p>O primeiro passo é agendar uma consulta inicial, que pode ser feita presencialmente ou pelo WhatsApp. Nessa consulta amigável online, você nos conta sua situação, analisamos a documentação disponível e fornecemos uma avaliação preliminar sobre a viabilidade da ação e as chances de êxito.</p>
+
+            <h3>2️⃣ Coleta de Documentos e Provas</h3>
+            <p>Após a decisão de prosseguir com a ação, iniciamos a coleta de documentos e provas que sustentarão o processo. Isso inclui carteira de trabalho, contracheques, comprovantes de pagamento, conversas por WhatsApp ou e-mail, testemunhas e qualquer outro elemento que comprove suas alegações.</p>
+
+            <h3>3️⃣ Elaboração e Ajuizamento da Ação</h3>
+            <p>Com toda a documentação reunida, elaboramos uma petição inicial detalhada, fundamentada juridicamente e com pedidos específicos. A ação é protocolada na Justiça do Trabalho competente, dando início oficial ao processo.</p>
+
+            <h3>4️⃣ Audiências e Representação</h3>
+            <p>Representamos você em todas as audiências, sejam de conciliação ou instrução. Nossa preparação minuciosa garante que todos os argumentos sejam apresentados de forma convincente, e que seus direitos sejam defendidos com vigor perante o juiz.</p>
+
+            <h3>5️⃣ Sentença e Execução</h3>
+            <p>Após a sentença favorável, acompanhamos todo o processo de execução, garantindo que os valores devidos sejam efetivamente pagos pela empresa. Se necessário, recorremos a instâncias superiores para garantir o melhor resultado possível.</p>
+        </div>
+
+        <div class="cta-section">
+            <h3>Pronto Para Buscar Seus Direitos?</h3>
+            <p>Não deixe para amanhã o que pode ser resolvido hoje. Quanto mais cedo agir, melhores suas chances.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">💬 Comece Sua Consulta Amigável Online</a>
+        </div>
+
+        <div class="section">
+            <h2>Direitos Trabalhistas Mais Comuns em São Paulo</h2>
+            <p>A cidade de São Paulo, sendo o maior polo econômico do Brasil, concentra milhares de trabalhadores em diversos setores. Com essa dinâmica intensa, violações de direitos trabalhistas são frequentes. Conheça os direitos mais reivindicados:</p>
+
+            <h3>📅 Jornada de Trabalho</h3>
+            <p>A jornada de trabalho padrão no Brasil é de 8 horas diárias e 44 horas semanais, conforme estabelecido pela CLT. Qualquer trabalho além desse limite deve ser remunerado como hora extra, com adicional mínimo de 50% sobre o valor da hora normal. Aos domingos e feriados, o adicional é de 100%. Muitos empregadores em São Paulo desrespeitam essas regras, especialmente no comércio, restaurantes e setor de serviços.</p>
+
+            <h3>💵 Salário e Verbas Salariais</h3>
+            <p>O salário deve ser pago até o 5º dia útil do mês subsequente ao trabalhado. Atrasos frequentes, descontos indevidos ou pagamento parcial são práticas ilegais que geram direito a indenização. Além do salário base, existem verbas como comissões, gratificações, prêmios e adicionais que, quando pagos com habitualidade, integram a remuneração para todos os efeitos legais.</p>
+
+            <h3>🎁 Direitos na Rescisão</h3>
+            <p>Na rescisão do contrato de trabalho, o empregado tem direito a receber diversas verbas, dependendo do tipo de desligamento: saldo de salário, aviso prévio (trabalhado ou indenizado), férias vencidas e proporcionais com adicional de 1/3, 13º salário proporcional, saque do FGTS e multa de 40% (em caso de demissão sem justa causa). O pagamento deve ocorrer em até 10 dias após o término do contrato.</p>
+
+            <h3>🏥 Segurança e Saúde no Trabalho</h3>
+            <p>O empregador tem a obrigação legal de fornecer um ambiente de trabalho seguro e saudável. Isso inclui fornecimento de EPIs (Equipamentos de Proteção Individual), realização de exames médicos periódicos, treinamentos de segurança e implementação de medidas preventivas. A negligência nessas obrigações pode resultar em acidentes de trabalho e doenças ocupacionais, gerando responsabilidade civil e obrigação de indenizar.</p>
+
+            <h3>🚫 Proteção Contra Discriminação</h3>
+            <p>A legislação trabalhista brasileira proíbe qualquer tipo de discriminação no ambiente de trabalho, seja por motivo de sexo, origem, raça, cor, estado civil, situação familiar, deficiência, reabilitação profissional, idade ou orientação sexual. Práticas discriminatórias geram direito a indenização por danos morais e podem ensejar até rescisão indireta do contrato.</p>
+        </div>
+
+        <div class="cta-section">
+            <h3>O Tempo Está Correndo!</h3>
+            <p>Não deixe seus direitos prescreverem. Fale conosco hoje mesmo e proteja o que é seu por direito.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">⚡ Agende Sua Consulta Urgente</a>
+        </div>
+
+        <div class="section">
+            <h2>Prazos Importantes na Justiça do Trabalho</h2>
+            <p>Um aspecto crucial que muitos trabalhadores desconhecem é que os direitos trabalhistas têm prazos para serem reivindicados. A prescrição trabalhista é o instituto que estabelece esses limites temporais.</p>
+
+            <h3>⏰ Prescrição Bienal</h3>
+            <p>O trabalhador tem até dois anos após o término do contrato de trabalho para ajuizar uma reclamação trabalhista. Esse é um prazo fatal, ou seja, após esse período, perde-se o direito de reclamar judicialmente qualquer verba ou direito decorrente daquela relação de emprego.</p>
+
+            <h3>📆 Prescrição Quinquenal</h3>
+            <p>Mesmo estando ainda empregado ou tendo ajuizado a ação dentro do prazo de dois anos após o desligamento, o trabalhador só pode cobrar direitos referentes aos últimos cinco anos anteriores ao ajuizamento da ação. Valores de período anterior a esse prazo estão prescritos.</p>
+
+            <p><strong>Por isso é fundamental agir rapidamente!</strong> Quanto mais tempo você espera, mais direitos podem ser perdidos pela prescrição. Nossa equipe está pronta para analisar seu caso imediatamente e garantir que nenhum direito seu seja perdido por questões de prazo.</p>
+        </div>
+
+        <div class="section">
+            <h2>Reforma Trabalhista e Seus Direitos</h2>
+            <p>A Reforma Trabalhista, implementada pela Lei 13.467/2017, trouxe mudanças significativas na legislação trabalhista brasileira. No entanto, muitos direitos fundamentais foram mantidos e continuam protegidos pela Constituição Federal e pela CLT. Nossa equipe está atualizada com todas essas mudanças e sabe exatamente como aplicá-las a favor dos trabalhadores.</p>
+
+            <p>Algumas mudanças importantes incluíram novas regras sobre trabalho intermitente, home office, acordos individuais e coletivos, rescisão por acordo, parcelamento de férias, entre outras. Apesar dessas alterações, direitos essenciais como FGTS, férias, 13º salário, horas extras, adicional noturno, insalubridade, periculosidade e outros foram preservados.</p>
+
+            <p>É fundamental contar com advogados que entendam profundamente tanto a legislação anterior quanto as novas regras, para garantir que seus direitos sejam plenamente respeitados nesse cenário pós-reforma. Nossa experiência abrange todo o estado de São Paulo e também mantemos parceria com profissionais qualificados em Minas Gerais.</p>
+        </div>
+
+        <div class="cta-section">
+            <h3>Tem Dúvidas Sobre Seus Direitos?</h3>
+            <p>Agende uma consulta e tire todas as suas dúvidas com nossos especialistas em direito trabalhista.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">📱 Fale Conosco pelo WhatsApp</a>
+        </div>
+
+        <div class="section">
+            <h2>Marketing Digital para Escritórios de Advocacia</h2>
+            <p>Se você é advogado trabalhista e busca aumentar sua presença digital, recomendamos os serviços especializados da <a href="https://www.fernandocoutinho.com/" class="inline-link" target="_blank">Agência de SEO e Marketing</a>, que oferece soluções personalizadas para o mercado jurídico.</p>
+
+            <h3>🎯 Por Que a Presença Digital é Importante?</h3>
+            <p>No cenário atual, ter uma presença digital forte é essencial para alcançar clientes que precisam de serviços jurídicos. A maioria das pessoas busca por advogados através do Google e redes sociais, tornando fundamental investir em marketing digital especializado.</p>
+
+            <h3>🌟 Nossa Atuação Regional</h3>
+            <p>Atuamos não apenas na capital paulista, mas também atendemos trabalhadores de diversas cidades da região metropolitana e interior. Nossa rede de advocacia trabalhista garante atendimento de qualidade em todo o estado de São Paulo, oferecendo a mesma excelência em todas as localidades.</p>
+
+            <p>Trabalhadores de cidades como Guarulhos, Santo André, Osasco, Campinas, Sorocaba, São José dos Campos, Mogi das Cruzes, Mauá e Diadema podem contar com nosso suporte especializado. Além disso, mantemos parcerias estratégicas em Minas Gerais, incluindo Belo Horizonte, Juiz de Fora e Contagem.</p>
+        </div>
+
+        <div class="section">
+            <h2>Perguntas Frequentes sobre Direitos Trabalhistas</h2>
+            
+            <h3>❓ Fui demitido sem justa causa. O que devo fazer?</h3>
+            <p>Primeiramente, verifique se todas as verbas rescisórias foram pagas corretamente. Você tem direito a: aviso prévio, saldo de salário, férias vencidas e proporcionais com 1/3, 13º salário proporcional, saque do FGTS e multa de 40%. Se houver alguma irregularidade, entre em contato imediatamente com um advogado trabalhista.</p>
+
+            <h3>❓ Trabalhei horas extras que não foram pagas. Posso cobrar?</h3>
+            <p>Sim! Horas extras não pagas são um direito que pode ser cobrado judicialmente. Reúna todas as provas possíveis: contracheques, registros de ponto, mensagens, e-mails ou testemunhas que comprovem a jornada excedente. O prazo para cobrar é de até 5 anos, mas é importante agir logo.</p>
+
+            <h3>❓ Sofri um acidente de trabalho. Quais são meus direitos?</h3>
+            <p>Em caso de acidente de trabalho, você tem direito à estabilidade provisória de 12 meses após o retorno, auxílio-doença acidentário, e pode ter direito a indenização por danos materiais, morais e estéticos, dependendo da gravidade. É fundamental registrar o acidente através da Comunicação de Acidente de Trabalho (CAT).</p>
+
+            <h3>❓ Estou sofrendo assédio moral no trabalho. O que fazer?</h3>
+            <p>Assédio moral é uma violação grave dos seus direitos. Documente todas as situações: grave conversas (se permitido), salve e-mails, mensagens, busque testemunhas. Você pode buscar rescisão indireta do contrato e indenização por danos morais. Procure um advogado trabalhista imediatamente.</p>
+
+            <h3>❓ Meu empregador não registrou minha carteira. Tenho direitos?</h3>
+            <p>Sim! Trabalhar sem registro em carteira é ilegal. Você pode entrar com ação de reconhecimento de vínculo empregatício e cobrar todos os direitos trabalhistas desde o início da prestação de serviços: FGTS, férias, 13º salário, horas extras e demais verbas.</p>
+
+            <h3>❓ Quanto tempo demora um processo trabalhista?</h3>
+            <p>O tempo varia bastante, mas geralmente um processo trabalhista leva de 1 a 3 anos até a sentença final. Com a Reforma Trabalhista, os processos têm sido mais rápidos. Após a sentença favorável, ainda há a fase de execução para receber os valores.</p>
+
+            <h3>❓ Preciso pagar para entrar com ação trabalhista?</h3>
+            <p>A maioria dos advogados trabalhistas trabalha com honorários de êxito, ou seja, você só paga se ganhar a causa, sendo descontado um percentual do valor recebido. Consulte nosso escritório para entender as condições específicas do seu caso.</p>
+        </div>
+
+        <div class="section">
+            <h2>Depoimentos de Clientes Satisfeitos</h2>
+            
+            <h3>💬 Maria S. - Auxiliar Administrativa</h3>
+            <p>"Fui demitida injustamente e não sabia o que fazer. A equipe me atendeu muito bem, explicou todos os meus direitos e conseguiu recuperar todas as verbas que a empresa não tinha pagado. Recomendo muito!"</p>
+
+            <h3>💬 João P. - Motorista</h3>
+            <p>"Trabalhei por anos fazendo horas extras sem receber. Achei que tinha perdido meus direitos, mas o advogado conseguiu provar tudo e recebi uma boa indenização. Profissionais competentes e atenciosos."</p>
+
+            <h3>💬 Ana L. - Vendedora</h3>
+            <p>"Sofri assédio moral durante meses e não aguentava mais. A advocacia me ajudou a sair dessa situação com dignidade e ainda consegui uma indenização justa. Muito obrigada pelo suporte!"</p>
+
+            <h3>💬 Carlos R. - Operador de Máquinas</h3>
+            <p>"Me acidentei no trabalho e a empresa não queria assumir a responsabilidade. Com a ajuda do escritório, consegui meus direitos e a indenização que merecia. Profissionalismo exemplar!"</p>
+        </div>
+
+        <div class="section">
+            <h2>Próximos Passos: Como Começar Seu Processo</h2>
+            <p>Decidir buscar seus direitos trabalhistas é o primeiro passo para a justiça. Aqui está um guia simples de como iniciar:</p>
+
+            <h3>🔹 Passo 1: Entre em Contato</h3>
+            <p>Clique no botão do WhatsApp e envie uma mensagem descrevendo brevemente sua situação. Não se preocupe em dar muitos detalhes agora, apenas conte o básico do que aconteceu.</p>
+
+            <h3>🔹 Passo 2: Agende Sua Consulta Amigável Online</h3>
+            <p>Nossa equipe agendará uma consulta inicial para ouvir sua história completa. Pode ser presencial em nosso escritório ou por videochamada, como preferir.</p>
+
+            <h3>🔹 Passo 3: Separe os Documentos</h3>
+            <p>Reúna toda documentação que tiver: carteira de trabalho, contracheques, comprovantes, mensagens, fotos, vídeos - tudo que possa ajudar a comprovar sua situação.</p>
+
+            <h3>🔹 Passo 4: Receba Nossa Avaliação</h3>
+            <p>Após analisar seu caso, forneceremos uma avaliação honesta sobre suas chances de sucesso, valores estimados e estratégia recomendada.</p>
+
+            <h3>🔹 Passo 5: Decidimos Juntos</h3>
+            <p>Se decidir prosseguir, cuidaremos de todo o processo. Você será mantido informado em cada etapa, do início ao recebimento dos valores.</p>
+
+            <p><strong>Importante:</strong> Todo o processo é conduzido com total transparência e você sempre terá clareza sobre prazos, custos e expectativas realistas do resultado.</p>
+        </div>
+
+        <div class="section">
+            <h2>Áreas de Atuação em Todo o Brasil</h2>
+            <p>Embora nossa sede principal esteja em São Paulo, oferecemos suporte e temos parceiros estratégicos em diversas regiões do país. Nossa rede de advocacia trabalhista garante que trabalhadores de diferentes cidades tenham acesso a serviços jurídicos de qualidade.</p>
+
+            <h3>🏙️ Grande São Paulo e Região Metropolitana</h3>
+            <p>Atendemos todas as cidades da região metropolitana de São Paulo, incluindo as principais cidades do ABC Paulista e municípios adjacentes. Nossa localização estratégica permite atendimento rápido e eficiente para trabalhadores de toda a região.</p>
+
+            <h3>🏭 Interior de São Paulo</h3>
+            <p>Mantemos atendimento especializado em importantes polos industriais e comerciais do interior paulista, garantindo que trabalhadores dessas regiões tenham acesso aos mesmos serviços de excelência oferecidos na capital.</p>
+
+            <h3>🌄 Minas Gerais</h3>
+            <p>Através de parcerias estratégicas, oferecemos suporte para trabalhadores das principais cidades mineiras, mantendo o mesmo padrão de qualidade e comprometimento com os direitos trabalhistas.</p>
+        </div>
+
+        <div class="section">
+            <h2>Compromisso com a Ética e Transparência</h2>
+            <p>Nossa atuação é pautada pelos mais altos padrões éticos da advocacia brasileira. Seguimos rigorosamente o Código de Ética da OAB e mantemos total transparência com nossos clientes em todas as etapas do processo.</p>
+
+            <h3>✅ Honestidade nas Expectativas</h3>
+            <p>Não fazemos promessas vazias. Fornecemos avaliações realistas sobre as chances de sucesso do seu caso, baseadas em nossa experiência e na legislação vigente.</p>
+
+            <h3>✅ Comunicação Clara</h3>
+            <p>Explicamos o processo jurídico em linguagem simples, sem juridiquês. Você sempre saberá exatamente o que está acontecendo com seu caso.</p>
+
+            <h3>✅ Valores Justos</h3>
+            <p>Nossos honorários são transparentes e competitivos. Trabalhamos principalmente com honorários de êxito, onde você só paga se ganhar a causa.</p>
+
+            <h3>✅ Dedicação Total</h3>
+            <p>Cada caso recebe nossa atenção dedicada. Não somos um escritório que trata clientes como números - você terá acompanhamento personalizado do início ao fim.</p>
+        </div>
+
+        <div class="cta-section">
+            <h3>Está Pronto Para Defender Seus Direitos?</h3>
+            <p>Não espere mais! Seus direitos trabalhistas são importantes e merecem ser protegidos. Entre em contato agora mesmo.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511975596711&text=Ola+gostaria+de+fazer+uma+avalia%C3%A7%C3%A3o+trabalhista+gratuita" class="cta-button" target="_blank">🎯 Iniciar Minha Consulta Amigável Online</a>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Advocacia Trabalhista em São Paulo</strong></p>
+        <p>Defendendo seus direitos com dedicação e competência</p>
+        <p style="margin-top: 20px;">📞 Atendimento pelo WhatsApp: (11) 97559-6711</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">© 2025 - Advocacia Trabalhista São Paulo</p>
+    </footer>
+</body>
+</html>
